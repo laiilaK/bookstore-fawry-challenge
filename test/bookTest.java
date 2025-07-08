@@ -27,6 +27,10 @@ public class bookTest {
     @Test
     //Remove non-existent books
     public void removeBooks(){
+        store.addBook(b1);
+        store.addBook(b2);
+        store.addBook(b3);
+
         store.removeBook("123");
         store.removeBook("123");
         store.removeBook("123");
@@ -35,9 +39,11 @@ public class bookTest {
 
     @Test
     public void removeOutdated(){
-        store.removeOutdatedBook(1);
-        store.removeOutdatedBook(5);
-        store.removeOutdatedBook(100);
+        store.addBook(b1);
+        store.addBook(b2);
+        store.addBook(b3);
+
+        store.removeOutdatedBook(10);
     }
 
 }
