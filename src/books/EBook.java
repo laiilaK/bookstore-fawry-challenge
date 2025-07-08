@@ -16,8 +16,9 @@ public class EBook extends Book{
         this.fileType = fileType;
     }
 
-    public void buyBook(int quantity, String email, String address) {
+    public boolean buyBook(int quantity, String email, String address) {
         EmailService service = new EmailService() ;
         service.send(this ,quantity ,  email);
+        return true;
     }
 }

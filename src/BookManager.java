@@ -47,7 +47,7 @@ public class BookManager {
     public double buyBook(String isbn, int quantity, String email, String address){
         for (Book book : inventory) {
             if (book.getISBN().equals(isbn)) {
-                book.buyBook(quantity, email, address);
+                if (! book.buyBook(quantity, email, address)) return 0.0;
                 double price = book.getPrice() * quantity;
                 System.out.println("Total price: "+price);
                 return price;

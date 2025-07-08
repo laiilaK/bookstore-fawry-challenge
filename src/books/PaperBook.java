@@ -18,14 +18,16 @@ public class PaperBook extends Book{
     }
 
 
-    public void buyBook(int quantity, String email, String address) {
+    public boolean buyBook(int quantity, String email, String address) {
         if (quantity > this.quantity){
             System.out.println("Book quantity is more than available");
-            return;
+            return false;
         }
         this.quantity -= quantity;
         ShippingService service = new ShippingService();
         service.ship(this,quantity , address);
+
+        return true;
     }
 
 }

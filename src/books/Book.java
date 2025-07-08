@@ -11,8 +11,9 @@ public abstract class Book {
 
 
 
-    public void buyBook(int quantity, String email, String address) {
+    public boolean buyBook(int quantity, String email, String address) {
         System.out.println("Abstract book class method not implemented");
+        return false;
     }
 }
 

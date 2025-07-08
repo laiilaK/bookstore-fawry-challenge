@@ -12,7 +12,8 @@ public class DemoBook extends Book{
         this.publishYear = yearPublished;
         this.price =price;
     }
-    public void buyBook(int quantity, String email, String address) {
+    public boolean buyBook(int quantity, String email, String address) {
         System.out.println("DemoBook not for sale.");
+        return false;
     }
 }
