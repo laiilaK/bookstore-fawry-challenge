@@ -5,9 +5,11 @@
 - **JUnit:** Used as the testing framework for writing and running unit tests.
 
 ## Screenshots
-running bookTest.java
+- Testing creation of books, adding them and deleting specific or outdated ones
+
 ![Screenshot 2025-07-08 195830](https://github.com/user-attachments/assets/30029225-0891-4109-9ae3-9b7d5814aa50)
 
-running buyTest.java
+- Testing logic and validation
+ 
 ![image](https://github.com/user-attachments/assets/cfc4112d-8046-49f8-994c-229eaa38c5f1)
 
